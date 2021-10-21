@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:hr_management_responsive_admin_panel_211015/common/app_colors.dart';
 import 'package:hr_management_responsive_admin_panel_211015/pages/widget/headerwidget.dart';
 import 'package:hr_management_responsive_admin_panel_211015/pages/widget/notification_card_widget.dart';
+import 'package:hr_management_responsive_admin_panel_211015/pages/widget/recruitment_data_widget.dart';
 
 class Dashboard extends StatefulWidget {
   const Dashboard({Key? key}) : super(key: key);
@@ -35,11 +36,18 @@ class _DashboardState extends State<Dashboard> {
                   // ignore: avoid_unnecessary_containers
                   child: Container(
                     child: Column(
-                        // ignore: prefer_const_literals_to_create_immutables
-                        children: [
-                          // ignore: prefer_const_constructors
-                          NotificationCardWidget(),
-                        ]),
+                      // ignore: prefer_const_literals_to_create_immutables
+                      children: [
+                        // ignore: prefer_const_constructors
+                        NotificationCardWidget(),
+                        // ignore: prefer_const_constructors
+                        SizedBox(
+                          height: 20,
+                        ),
+                        // ignore: prefer_const_constructors
+                        RecruitmentDataWidget(),
+                      ],
+                    ),
                   ),
                 ),
                 Expanded(
